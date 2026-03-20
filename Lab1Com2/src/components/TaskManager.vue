@@ -86,7 +86,6 @@
             <span class="stats-text">pendiente(s)</span>
           </div>
         </div>
-
        
         <transition name="fade">
           <div v-if="tareas.length === 0" class="empty-state">
@@ -127,8 +126,8 @@
                   class="btn-complete"
                   :class="{ 'btn-reopen': tarea.completada }"
                 >
-                  <span v-if="!tarea.completada">✓ Completar</span>
-                  <span v-else>↺ Reabrir</span>
+                  <span v-if="!tarea.completada">Completar</span>
+                  <span v-else>Reabrir</span>
                 </button>
                 <button 
                   @click="eliminarTarea(index)" 
@@ -187,7 +186,7 @@ const validarFormulario = () => {
     const hoy = new Date()
     hoy.setHours(0, 0, 0, 0)
     if (fechaSeleccionada < hoy) {
-      errores.value.fecha = 'La fecha no puede ser anterior a hoy'
+      errores.value.fecha = 'La fecha debe ser mayor a hoy'
       valido = false
     }
   }
