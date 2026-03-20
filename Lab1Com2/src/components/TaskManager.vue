@@ -254,7 +254,7 @@ const formatFecha = (fecha) => {
 const getPrioridadTexto = (prioridad) => {
   const prioridades = {
     alta: 'Alta prioridad',
-    media: 'Prioridad media',
+    media: 'Media prioridad', 
     baja: 'Baja prioridad'
   }
   return prioridades[prioridad] || prioridad
