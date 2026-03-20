@@ -34,29 +34,12 @@ FUNCIONES PRINCIPALES DEL SISTEMA:
 
 <<<<<< INTERROGANTES >>>>>>
 
-- Explique la diferencia entre las siguientes directivas utilizadas en su proyecto: v-bind y v-model
-
-v-bind es como un mensaje de ida, este va de JavaScript hacia el HTML. Solo actualiza la vista cuando la variable cambia, pero no al revés. 
-v-model es como un chat de dos vías, conecta el input con la variable. Cuando escribimos en el campo, la variable se actualiza y cuando cambiamos la variable, el campo también cambia.
-
-Estos son los ejemplos en nuestro proyecto: 
-
-<!-- v-model: conexión BIDIRECCIONAL -->
-<input type="text" v-model="nuevaTarea.nombre">
-<!-- Cuando escribes, se actualiza nuevaTarea.nombre -->
-<!-- Si cambias nuevaTarea.nombre, el input se actualiza -->
-
-<!-- v-bind: conexión UNIDIRECCIONAL -->
-<button :disabled="agregando">
-<!-- El botón se deshabilita SOLO cuando agregando es true -->
-<!-- Pero hacer clic en el botón NO cambia agregando -->
-
 
 - Explique con sus propias palabras qué es Vue.js y cuál es su función dentro de la página web desarrollada:
 Vue.js es como un asistente inteligente que se encarga de mantener sincronizada la pantalla con los datos de nmuestra aplicación
 Imaginemos que tenemos por ejemplo una pizarra blanca (en este caso seria la pantalla) y un cuaderno (serian los datos). Normalmente si queremos cambiar algo, tendriamos que borrar de la pizarra y escribir otra cosa manualmente. Con Vue,  solo cambiamos el cuaderno y Vue automáticamente actualiza la pizarra por nosotros.
 
-Función en mi página web:
+Función en nuestra página web:
 
 En TaskManager, Vue hace todo el trabajo pesado:
 Sincroniza los formularios -> Cuando el usuario escribe en "Nombre de la tarea", Vue guarda ese texto en la variable nuevaTarea.nombre automáticamente.
@@ -77,11 +60,11 @@ const tareas = ref([])
 Guarda la lista completa de todas las tareas que ha creado el usuario.
 ¿Para qué sirve? Es el CORAZÓN de la aplicación. Cada tarea es un objeto con:
 
-nombre → el título de la tarea
-fecha → cuándo debe entregarse
-prioridad → alta, media o baja
-completada → si ya se hizo o no
-id → identificador único
+nombre -> el título de la tarea
+fecha -> cuándo debe entregarse
+prioridad -> alta, media o baja
+completada -> si ya se hizo o no
+id -> identificador único
 
 Ejemplo de cómo se ve:
 tareas = [
@@ -146,6 +129,12 @@ No guarda un valor fijo, sino que calcula automáticamente cuántas tareas NO es
 
 Es especial porque no necesito actualizarlo manualmente. Vue lo recalcula automáticamente cada vez que cambia tareas. Es como tener una calculadora que siempre muestra el resultado correcto sin que yo tenga que presionar "=".
 
+
+
+- Explique la diferencia entre las siguientes directivas utilizadas en su proyecto: v-bind y v-model
+
+v-bind es como un mensaje de ida, este va de JavaScript hacia el HTML. Solo actualiza la vista cuando la variable cambia, pero no al revés. 
+v-model es como un chat de dos vías, conecta el input con la variable. Cuando escribimos en el campo, la variable se actualiza y cuando cambiamos la variable, el campo también cambia.
 
 
 - Mencione al menos un ejemplo de evento utilizado dentro de su aplicación.
