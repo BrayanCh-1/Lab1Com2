@@ -1,8 +1,8 @@
 # Lab1Com2
 
 INTEGRANTES:
-- Esmeralda Isabel Cruz Roldán
-- Brayan Audiel Chavarría Romero
+- Esmeralda Isabel Cruz Roldán - SMSS011124
+- Brayan Audiel Chavarría Romero - SM020924
 
 SITUACIÓN PROBLEMÁTICA:
 En la Universidad muchos estudiantes presentan dificultades para organizar sus tareas, actividades y fechas de entrega. Esto ocurre debido a la carga académica, la falta de herramientas adecuadas o el uso de métodos poco eficientes como anotaciones dispersas en papeles o en las notas de celular.
